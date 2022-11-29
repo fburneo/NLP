@@ -18,6 +18,8 @@ Para ello se nos da un dataset con los siguientes campos:
 * `B-coref`: boleano indicando si el pronombre hace referencia al nombre B.
 * `URL`: web de donde se ha sacado el fragmento de texto.
 
+El código tiene como objetivo la predicción de a cuál de los dos nombres marcados en cada frase hace referencia el pronombre seleccionado usando **dos modelos distintos** de PNL:
+
 * **MODELO 1**: Puede ser **cualquier modelo visto en los seminarios de PLN o en otras asignaturas**, como: Count vectorizer, HMM, Structured Perceptron, RNN, Logistic Regressor, XGBoost, etc...
 
 * **MODELO 2**: Debe ser un modelo **basado en Transformers** que incorpore el concepto de ***attention***.
